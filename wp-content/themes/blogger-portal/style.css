@@ -1,0 +1,285 @@
+/*
+Theme Name:         Blogger Portal
+Theme URI:          https://demo.mysterythemes.com/news-portal-demos/
+Author:             Mystery Themes
+Author URI:         https://mysterythemes.com
+Description:        Improve your blogging experience with Blogger Portal. It is one of the best themes designed for bloggers who want to provide an excellent experience for their audience by offering intuitive design options for their website. Blogger Portal provides increased customizing possibilities for fellow bloggers. With endless color possibilities and several layouts for different areas of the website, you may effectively convey your material to your users. The layouts are designed in such a way that your viewers will be able to effectively engage with your creative contents.Check the demo at https://demo.mysterythemes.com/child-theme/blogger-portal/
+Version:            1.0.4
+Requires at least:  5.6
+Tested up to:       6.6
+Requires PHP:       7.2
+License:            GNU General Public License v3 or later
+License URI:        http://www.gnu.org/licenses/gpl-3.0.html
+Template:     		  news-portal
+Text Domain:        blogger-portal
+Tags:               news, blog, entertainment, grid-layout, one-column, two-columns, three-columns, left-sidebar, right-sidebar, custom-colors, custom-logo, featured-image-header, footer-widgets, full-width-template, rtl-language-support, theme-options, translation-ready
+
+*/
+
+/*--------------------------------------------------------------
+body Font CSS
+--------------------------------------------------------------*/
+.item-title a,
+.entry-title a {
+  font-family: "Be Vietnam Pro", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Be Vietnam Pro", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+body {
+  font-family: "Be Vietnam Pro", Helvetica, Arial, sans-serif;
+  color: #302b2b;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: #000;
+}
+
+.fullwidth_layout #page, body.boxed_layout,.np-block-title, .widget-title, .page-header .page-title, .np-related-title, .widget_block .wp-block-group__inner-container>h1, .widget_block .wp-block-group__inner-container>h2, .widget_block .wp-block-group__inner-container>h3, .widget_block .wp-block-group__inner-container>h4, .widget_block .wp-block-group__inner-container>h5, .widget_block .wp-block-group__inner-container>h6{
+  background-color:#fdf6f9;
+}
+
+/*---------------------------------------------------
+ header css
+ ---------------------------------------------------*/
+
+#masthead{
+    z-index: 9999;
+    background-color: #fff;
+    position: relative;
+}
+
+#top-header, #content, #colophon {
+    z-index: 99;
+    position: relative;
+}
+
+.top-navigation ul li:first-child{
+  border-left:0px;
+  padding-left: 0;
+}
+
+
+
+/* -----------------------------------------
+background-animation css
+-------------------------------------------*/
+
+.blogger-portal-background-animation {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .blogger-portal-circles div {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border:6px solid rgb(173 20 87 / 0.8);
+  }
+
+  .blogger-portal-circles div:nth-child(1) {
+    top: 12%;
+    left: 42%;
+    animation: animate 10s linear infinite;
+  }
+
+  .blogger-portal-circles div:nth-child(2) {
+    top: 70%;
+    left: 50%;
+    animation: animate 7s linear infinite;
+  }
+  .blogger-portal-circles div:nth-child(3) {
+    top: 17%;
+    left: 6%;
+    animation: animate 9s linear infinite;
+  }
+
+  .blogger-portal-circles div:nth-child(4) {
+    top: 60%;
+    left: 90%;
+    animation: animate 10s linear infinite;
+  }
+
+  .blogger-portal-circles div:nth-child(5) {
+    top: 50%;
+    left: 10%;
+    animation: animate 6s linear infinite;
+  }
+
+  .blogger-portal-circles div:nth-child(6) {
+    top: 80%;
+    left: 70%;
+    animation: animate 12s linear infinite;
+  }
+
+  .blogger-portal-circles div:nth-child(7) {
+    top: 60%;
+    left: 80%;
+    animation: animate 15s linear infinite;
+  }
+
+  .blogger-portal-circles div:nth-child(8) {
+    top: 88%;
+    left: 25%;
+    animation: animate 16s linear infinite;
+  }
+
+  .blogger-portal-circles div:nth-child(9) {
+    top: 95%;
+    right:5%;
+    animation: animate 9s linear infinite;
+  }
+
+  .blogger-portal-circles div:nth-child(10) {
+    top: 20%;
+    left: 80%;
+    animation: animate 5s linear infinite;
+  }
+
+  @keyframes animate {
+    0% {
+      transform: scale(0) translateY(-90px) rotate(360deg);
+      opacity: 1;
+    }
+
+    100% {
+      transform: scale(1.3) translateY(-90px) rotate(-180deg);
+      border-radius: 50%;
+      opacity: 0;
+    }
+  }
+/* -----------------------------------------
+widget layout css
+-------------------------------------------*/
+.fullwidth_layout .widget{
+  background-color: #fff;
+  box-shadow: 0 0 8px rgb(0 5 0 / 0.2);
+  padding: 20px;
+}
+
+#secondary .widget .np-recent-posts-wrapper .np-post-meta{
+  display: none;
+}
+
+#secondary .widget.news_portal_recent_posts .np-recent-posts-wrapper .np-post-thumb{
+  box-shadow: 0 0 8px rgb(0 5 0 / 0.2);
+  border-radius: 7px;
+}
+
+#secondary .widget .np-post-title.small-size a, #secondary .widget.widget_categories a{
+  font-weight: 600;
+}
+
+.fullwidth_layout .site-footer .widget{
+  background-color: transparent;
+  box-shadow: none;
+  padding: 0px;
+}
+
+/* -----------------------------------------
+archive list layout css
+-------------------------------------------*/
+.fullwidth_layout article , .fullwidth_layout .np-related-section-wrapper .np-single-post{
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background-color: #fff;
+}
+
+.archive-list article, .home-list article{
+    display: grid;
+    grid-template-columns: 40% 57%;
+    grid-gap: 3%;
+
+}
+
+.archive-list article.no-image,.home-list article.no-image{
+  grid-template-columns: 100%;
+}
+
+.archive-list .np-article-thumb img,.home-list .np-article-thumb img{
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.archive-list .np-archive-post-content-wrapper, .home-list .np-archive-post-content-wrapper {
+    box-shadow: none;
+    padding:0px;
+}
+
+.archive-list .np-archive-post-content-wrapper:before, .home-list .np-archive-post-content-wrapper:before{
+    display: none;
+}
+
+.fullwidth_layout .np-archive-post-content-wrapper{
+  box-shadow: none;
+}
+
+.wp-block-latest-comments article {
+  box-shadow: none;
+  padding: 0;
+  display: block;
+}
+
+#np-scrollup {
+  z-index: 9999;
+}
+
+.np-archive-classic-post-wrapper .np-archive-post-content-wrapper,
+.np-archive-grid-post-wrapper .np-archive-post-content-wrapper,
+.archive-classic .np-archive-post-content-wrapper, .home-classic .np-archive-post-content-wrapper {
+  padding: 20px 0 0;
+}
+
+/* -----------------------------------------
+Dark Mode css
+-------------------------------------------*/
+
+.site-mode--dark.fullwidth_layout article,
+.site-mode--dark.fullwidth_layout .np-related-section-wrapper .np-single-post,
+.site-mode--dark.fullwidth_layout .widget{
+  background: #2f2f2f;
+}
+
+.site-mode--dark.fullwidth_layout #page,
+body.boxed_layout.site-mode--dark,
+.site-mode--dark .np-block-title,
+.site-mode--dark .widget-title,
+.site-mode--dark .page-header .page-title,
+.site-mode--dark .np-related-title,
+.site-mode--dark .widget_block .wp-block-group__inner-container>h1,
+.site-mode--dark .widget_block .wp-block-group__inner-container>h2,
+.site-mode--dark .widget_block .wp-block-group__inner-container>h3,
+.site-mode--dark .widget_block .wp-block-group__inner-container>h4,
+.site-mode--dark .widget_block .wp-block-group__inner-container>h5,
+.site-mode--dark .widget_block .wp-block-group__inner-container>h6,
+.site-mode--dark #masthead{
+  background-color: #222222;
+}
+
+body.site-mode--dark.boxed_layout .np-archive-post-content-wrapper {
+  background: none;
+}
+
+.boxed_layout.site-mode--dark #page, .site-mode--dark #page {
+  background: #2C2C2C;
+}
+
+.site-mode--dark #colophon .widget {
+	background: none !important;
+}

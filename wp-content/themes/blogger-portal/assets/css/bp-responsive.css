@@ -1,0 +1,9 @@
+@media (max-width: 600px) {
+    .archive-list article, .home-list article{
+        grid-template-columns: 100%;
+    }
+	
+    .item-title a, .entry-title a{
+        font-size: 22px;
+    }
+}

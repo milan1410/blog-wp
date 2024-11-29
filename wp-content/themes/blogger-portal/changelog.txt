@@ -1,0 +1,16 @@
+== 1.0.4 : 2024-10-30 ==
+	* Fix - Default hover color for post title fixed in dark mode.
+	* Imp - Footer widget dark mode background issue fixed.
+	
+== 1.0.3 : 2024-09-18 ==
+	* Fix - Dark mode css glitch fixed.
+	* Imp - archive grid and classic design improvement done.
+
+== 1.0.2 : 2024-08-14 ==
+	* Fix- Some design glitch fixed.
+
+== 1.0.1 : 2024-06-28 ==
+	* New - Theme URI Added.
+
+== 1.0.0 : 2024-06-24 ==
+	* New - Submit theme on wordpress.org trac.
